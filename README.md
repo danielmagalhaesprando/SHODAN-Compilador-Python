@@ -21,6 +21,30 @@ A linguagem permite declaração e atribuição de variáveis, operações aritm
 - Compilação e execução do código gerado.
 - Tratamento de erros léxicos, sintáticos, semânticos e de execução.
 
+### Estrutura de arquivos
+
+```
+SHODAN/
+├── Parte1_Lexical/
+│   ├── automato.py
+│   └── lexer.py
+├── Parte2_Sintatica/
+│   ├── analisador_LL1.py
+│   ├── tabela_parsing.py
+│   ├── gramatica.py
+│   ├── first.py
+│   └── follow.py
+├── Parte3_AST/
+│   └── AST.py
+├── Parte4_Semantica/
+│   └── analisador_semantico.py
+├── Parte5_Otimizacao/
+│   └── otimizador_codigo.py
+├── Parte6_Geracao/
+│   └── gerador_codigo.py
+└── main.py
+```
+
 ### Linguagem SHODAN
 
 A linguagem implementa os seguintes recursos:
@@ -77,30 +101,6 @@ while(contador < x){
 
     contador = contador + 1;
 }
-```
-
-### Estrutura de arquivos
-
-```
-SHODAN/
-├── Parte1_Lexical/
-│   ├── automato.py
-│   └── lexer.py
-├── Parte2_Sintatica/
-│   ├── analisador_LL1.py
-│   ├── tabela_parsing.py
-│   ├── gramatica.py
-│   ├── first.py
-│   └── follow.py
-├── Parte3_AST/
-│   └── AST.py
-├── Parte4_Semantica/
-│   └── analisador_semantico.py
-├── Parte5_Otimizacao/
-│   └── otimizador_codigo.py
-├── Parte6_Geracao/
-│   └── gerador_codigo.py
-└── main.py
 ```
 
 ### Dependências
