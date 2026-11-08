@@ -1,0 +1,10 @@
+% Numeros pares de 0 ate x %
+
+int x = 20;
+int atual = 0;
+
+while(atual <= x){
+    print(atual);
+
+    atual = atual + 2;
+}

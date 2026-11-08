@@ -1,0 +1,18 @@
+% Sequencia de Fibonacci %
+
+int x = 10; % Altere aqui para testar outros números %
+
+int a = 0; % Primeiro número da sequencia %
+int b = 1; % Segundo número da sequencia %
+
+int contador = 0;
+while(contador < x){
+    print(a);
+
+    int proximo = a + b;
+
+    a = b;
+    b = proximo;
+
+    contador = contador + 1;
+}

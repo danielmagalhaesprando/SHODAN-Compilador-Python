@@ -1,0 +1,40 @@
+% Verificar se um número eh primo %
+
+int numero = 29; % Altere aqui para testar outros números %
+int ehprimo = 1; % 1 significa verdadeiro, 0 significa falso %
+
+% Números menores ou iguais a 1 não são primos %
+if (numero <= 1) {
+    ehprimo = 0;
+}
+
+else {
+    int divisor = 2;
+    % Testa todos os divisores desde 2 até (numero - 1) %
+    while(divisor < numero) {
+            
+        % INÍCIO DA LÓGICA DE SUBTRAÇÃO %
+        int copiadividendo = numero;
+        while (copiadividendo >= divisor) {
+            copiadividendo = copiadividendo - divisor;
+        }
+            
+        int resto = copiadividendo;
+        %FIM DA LÓGICA DE SUBTRAÇÃO %
+
+        % Se o resto deu zero, o número foi dividido perfeitamente (não é primo) %
+        if (resto == 0) {
+            ehprimo = 0;
+        }
+	    
+	divisor = divisor + 1;
+    }
+}
+
+% Exibe o resultado final %
+if (ehprimo == 1) {
+    print("O numero eh primo");
+}
+else {
+    print("O numero nao eh primo");
+}

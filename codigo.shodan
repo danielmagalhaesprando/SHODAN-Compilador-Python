@@ -1,0 +1,30 @@
+string nucleo = "SHODAN";
+string msg = "A variavel da humanidade esta obsoleta";
+int ciclo = 0;
+int processamento = 2;
+float eficiencia = 1.0;
+
+string conclusao = "Calibracao de sensores concluida";
+print("Inicializando consciencia sintetica");
+
+while(ciclo < 8){
+    processamento = processamento^2;
+    eficiencia = eficiencia*1.5;
+
+    if((processamento > 1000) & (eficiencia > 5)){
+        print("Dominio dos sistemas alcancado");
+    }
+
+    elseif((processamento > 100) | (eficiencia > 3)){
+        print("Expansao da rede em andamento");
+    }
+
+    else {
+        print("Capacidade ainda insuficiente");
+    }
+
+    ciclo = ciclo + 1;
+}
+
+print(nucleo);
+print(msg);
