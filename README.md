@@ -21,6 +21,8 @@ A linguagem permite declaração e atribuição de variáveis, operações aritm
 - Compilação e execução do código gerado.
 - Tratamento de erros léxicos, sintáticos, semânticos e de execução.
 
+![AUTOMATO](Parte1_Lexical/AUTOMATO.jpg)
+
 ### Estrutura de arquivos
 
 ```
@@ -79,6 +81,10 @@ A linguagem implementa os seguintes recursos:
 - Blocos de instruções delimitados por `{` e `}`.
 - Comentários delimitados por `%`.
 - Finalização de instruções com `;`.
+
+![GRAMATICA1](Parte2_Sintatica/GRAMATICA-p1.jpg)
+![GRAMATICA2](Parte2_Sintatica/GRAMATICA-p2.jpg)
+![GRAMATICA3](Parte2_Sintatica/GRAMATICA-p3.jpg)
 
 ### Exemplo de código
 
